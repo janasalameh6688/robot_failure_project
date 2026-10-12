@@ -1,0 +1,75 @@
+ROBOT FAILURE PROJECT - DATA ANALYSIS REPORT
+=======================================================
+
+1. DATASET OVERVIEW
+------------------------------
+Rows: 10000
+Columns: 14
+
+Columns:
+  - UDI
+  - Product ID
+  - Type
+  - Air temperature [K]
+  - Process temperature [K]
+  - Rotational speed [rpm]
+  - Torque [Nm]
+  - Tool wear [min]
+  - Machine failure
+  - TWF
+  - HDF
+  - PWF
+  - OSF
+  - RNF
+
+2. MISSING VALUES
+------------------------------
+No missing values found.
+
+3. TARGET DISTRIBUTION
+------------------------------
+Machine failure = 0: 9661 rows (96.61%)
+Machine failure = 1: 339 rows (3.39%)
+
+4. NUMERIC FEATURE STATISTICS
+------------------------------
+UDI: mean=5000.500, std=2886.896, min=1.000, max=10000.000
+Air temperature [K]: mean=300.005, std=2.000, min=295.300, max=304.500
+Process temperature [K]: mean=310.006, std=1.484, min=305.700, max=313.800
+Rotational speed [rpm]: mean=1538.776, std=179.284, min=1168.000, max=2886.000
+Torque [Nm]: mean=39.987, std=9.969, min=3.800, max=76.600
+Tool wear [min]: mean=107.951, std=63.654, min=0.000, max=253.000
+Machine failure: mean=0.034, std=0.181, min=0.000, max=1.000
+TWF: mean=0.005, std=0.068, min=0.000, max=1.000
+HDF: mean=0.011, std=0.107, min=0.000, max=1.000
+PWF: mean=0.009, std=0.097, min=0.000, max=1.000
+OSF: mean=0.010, std=0.099, min=0.000, max=1.000
+RNF: mean=0.002, std=0.044, min=0.000, max=1.000
+
+5. FEATURE ENGINEERING
+------------------------------
+Created: Temperature difference [K]
+Created: Mechanical power proxy
+Created: Tool wear torque interaction
+
+6. CORRELATION WITH MACHINE FAILURE
+------------------------------
+HDF: 0.5758
+OSF: 0.5311
+PWF: 0.5228
+TWF: 0.3629
+Torque [Nm]: 0.1913
+Tool wear torque interaction: 0.1904
+Mechanical power proxy: 0.1760
+Temperature difference [K]: -0.1117
+Tool wear [min]: 0.1054
+Air temperature [K]: 0.0826
+Rotational speed [rpm]: -0.0442
+Process temperature [K]: 0.0359
+UDI: -0.0229
+RNF: 0.0045
+
+7. MODELING NOTE
+------------------------------
+The failure-mode indicator columns (TWF, HDF, PWF, OSF, RNF) are closely related to Machine failure and should be treated carefully to avoid target leakage.
+The main predictive features should focus on machine characteristics and sensor measurements available before a failure occurs.

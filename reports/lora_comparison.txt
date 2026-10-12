@@ -1,0 +1,14 @@
+LoRA fine-tuning experiment
+===========================
+Base model: sshleifer/tiny-gpt2
+Training examples: 200
+Validation examples: 50
+Epochs: 1
+Device: cpu
+Base validation loss: 10.8295
+Fine-tuned validation loss: 10.8294
+Base perplexity: 50487.5366
+Fine-tuned perplexity: 50484.6626
+Adapter saved to: C:\Users\janak\OneDrive\Documents\Green Circle Project\robot_failure_project\models\lora_maintenance_adapter
+
+Perplexity is calculated from token-level loss. Lower is better on the same evaluation data, but this small synthetic-template experiment does not establish real-world maintenance accuracy or causal relationships.

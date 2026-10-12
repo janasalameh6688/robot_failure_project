@@ -1,0 +1,13 @@
+question,relevance_rule,relevant_records_total,k,retrieved_records_available,relevant_hits,recall_at_k,precision_at_k
+Find machines with high torque and tool wear,Torque and tool wear >= their 75th percentiles,638,1,1,1,0.0016,1.0
+Find machines with high torque and tool wear,Torque and tool wear >= their 75th percentiles,638,3,3,3,0.0047,1.0
+Find machines with high torque and tool wear,Torque and tool wear >= their 75th percentiles,638,5,5,5,0.0078,1.0
+Find machines with high torque and tool wear,Torque and tool wear >= their 75th percentiles,638,10,10,10,0.0157,1.0
+Find machines with high torque,Torque >= its 75th percentile,2501,1,1,1,0.0004,1.0
+Find machines with high torque,Torque >= its 75th percentile,2501,3,3,3,0.0012,1.0
+Find machines with high torque,Torque >= its 75th percentile,2501,5,5,5,0.002,1.0
+Find machines with high torque,Torque >= its 75th percentile,2501,10,10,10,0.004,1.0
+Find machines with low rotational speed,Rotational speed <= its 25th percentile,2513,1,1,1,0.0004,1.0
+Find machines with low rotational speed,Rotational speed <= its 25th percentile,2513,3,3,3,0.0012,1.0
+Find machines with low rotational speed,Rotational speed <= its 25th percentile,2513,5,5,5,0.002,1.0
+Find machines with low rotational speed,Rotational speed <= its 25th percentile,2513,10,10,10,0.004,1.0

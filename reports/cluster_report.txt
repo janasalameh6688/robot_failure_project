@@ -1,0 +1,54 @@
+﻿K-MEANS CLUSTERING REPORT
+============================================================
+
+Silhouette scores by K
+------------------------------------------------------------
+ k  silhouette_score
+ 2          0.205180
+ 3          0.208171
+ 4          0.210314
+ 5          0.201138
+ 6          0.199497
+
+Selected K: 4
+Final silhouette score: 0.2103
+
+Cluster sizes
+------------------------------------------------------------
+cluster_label
+0    2523
+1    2076
+2    2673
+3    2728
+
+Average operating profile by cluster
+------------------------------------------------------------
+               Air temperature [K]  Process temperature [K]  Rotational speed [rpm]  Torque [Nm]  Tool wear [min]  Temperature difference [K]  Mechanical power proxy  Tool wear torque interaction
+cluster_label                                                                                                                                                                                      
+0                           299.03                   309.44                 1446.59        45.96           167.65                       10.41                65929.84                       7622.33
+1                           299.93                   309.99                 1790.67        26.52           110.01                       10.06                46554.61                       2930.68
+2                           298.66                   309.23                 1480.74        42.55            52.68                       10.57                62475.34                       2204.11
+3                           302.28                   311.30                 1489.21        42.20           105.33                        9.02                62201.81                       4376.77
+
+Interpretation
+------------------------------------------------------------
+
+Cluster 0: Highest average tool wear (167.65 min) and highest
+average torque (45.96 Nm), indicating a higher-wear, higher-torque
+operating profile.
+
+Cluster 1: Highest average rotational speed (1790.67 rpm), lowest
+average torque (26.52 Nm), and lowest mechanical power proxy
+(46554.61), indicating a faster, lower-torque operating profile.
+
+Cluster 2: Lowest average tool wear (52.68 min) and lowest
+tool-wear-torque interaction (2204.11), indicating a lower-wear
+operating profile.
+
+Cluster 3: Highest average air temperature (302.28 K) and process
+temperature (311.30 K), indicating a higher-temperature operating
+profile.
+
+These clusters describe operating patterns, not proven differences
+in failure risk.
+

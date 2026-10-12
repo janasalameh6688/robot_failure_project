@@ -1,0 +1,5 @@
+1. Open VS Code. File > Open Folder > choose this folder (robot_failure_project).
+2. In VS Code, open the file called .env and replace the text after DATABASE_URL= with your database connection string. Save it.
+3. In VS Code, click Terminal > New Terminal.
+4. Type: pip install -r requirements.txt   (press Enter, wait for it to finish)
+5. Type: python main.py setup   (press Enter)
